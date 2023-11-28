@@ -1,0 +1,64 @@
+/*    ---------------------------------------- initialisation ------------------------- */
+*{
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    box-sizing: border-box;
+
+}
+*,
+*:before,
+*:after {
+    box-sizing: inherit;
+}
+/* ------------------------------------------------------------------------------------- */
+
+
+body{
+    display: flex;
+    /* on défini la direction de l'axe principal comme étant vertical */
+    flex-direction: column;
+    /*width: 100vw;*/
+}
+/* les conteneurs div autour de chaque section */
+.global{
+   display: flex;
+   justify-content: center;
+   min-width: 100%;
+   /*border: 1px solid #aaa;*/ 
+   min-height: 100vh;
+   
+}
+.global section,
+.global header,
+.global footer{
+    display: flex;
+    flex: 0 1 1000px;
+    /*border: 1px solid #aaa;*/
+    background-color: rgba(0,0,0,.2);
+
+}
+
+#entete {
+    background-color: rgb(220,204,102);
+    min-height: 1vh;
+    position: sticky;
+    top: 0;
+}
+
+#entete header {
+    justify-content: space-between;
+    align-items: center;
+    /* permet de définir le référentiel pour le menu */
+    position: relative;
+}
+#accueil{
+    background-color: aquamarine;
+}
+
+#inscription{
+   background-color: rgb(234, 255, 127); 
+}
+

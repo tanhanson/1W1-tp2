@@ -1,0 +1,81 @@
+/*
+<input type="checkbox"  id="check_burger">
+        <label id = "burger" for="check_burger">
+            <img src="https://s2.svgbox.net/hero-outline.svg?ic=menu" width = "32" height = "32" alt="logo burger">
+        </label>
+*/
+
+/*
+  <nav class = "menu">
+            <a href="#accueil"> Accueil</a>
+            <a href="#inscription"> Inscription</a>
+            <a href="galerie"> Galerie</a>
+        </nav> 
+*/
+
+#burger {
+    transition: 0.25;
+    padding: 5px;
+    width: 2.3rem;
+    height: 2.3rem;
+    transition: .25s;
+}
+
+#burger img {
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+#burger img:nth-of-type(1){
+    display: block;
+}
+#burger img:nth-of-type(2){
+    display: none;
+}
+#check_burger {
+    display: none;
+}
+#check_burger:checked ~ #burger img:nth-of-type(2) {
+    display: block;
+}
+#check_burger:checked ~ #burger img:nth-of-type(1) {
+    display: none;
+}
+
+#check_burger:checked ~ .menu {
+    transform: translateY(0); /* position naturel du menu */
+ }
+ /* Permet de controler l'apparence du bouton burger
+ deux possibilités: ouvrir ou fermer
+ ouvrir : les trois barres horizontales
+ */
+ #check_burger:checked ~ #burger {
+    transform: rotate(90deg);
+ }
+
+.menu {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    right: 0;
+    top: 100%;
+    transform: translateY(-250%);
+    transition: 0.15s;
+    background-color: rgb(112, 197, 116);
+    width: 200px;
+    gap: 3px;
+    z-index: -1;
+    
+}
+.menu a {
+    color: #fff;
+    display: block;
+}
+
+h1{
+
+}
+
+h2{
+    margin-top: 1.2vh;
+}
