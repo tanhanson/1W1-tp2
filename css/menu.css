@@ -47,8 +47,13 @@
  }
  /* Permet de controler l'apparence du bouton burger
  deux possibilités: ouvrir ou fermer
- ouvrir : les trois barres horizontales
+ ouvrir : les trois barres horizontales apparaît
+ fermmer: le X apparait
+ 
  */
+
+ /* si la case à côcher alors on fait apparaître l'image «X»
+ et on fait disparaître l'image « burger »
  #check_burger:checked ~ #burger {
     transform: rotate(90deg);
  }
