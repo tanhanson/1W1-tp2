@@ -1,0 +1,47 @@
+/*
+<figure class = "galerie">
+        <figure class = "galerie__figure">
+            <img class = "galerie__img" src="images/maison01.jpg" alt="">
+            <figcaption class = "galerie__caption"></figcaption>    
+        </figure>
+*/
+/* Conteneur principal */
+.galerie{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    padding: 20px;
+    justify-content: flex-start;
+    align-items: flex-start;
+    align-content: flex-start;
+}
+/* Galerie d'image */
+.galerie__figure{
+    width: 300px;
+    position: relative;
+    border: 1 px solid #aaa;
+     transition: all .5s;
+     transform: scale(1);
+}
+/* figcaption*/
+.galerie__caption{
+    
+}
+
+/* image */
+.galerie__img{
+   
+    width: 100%;
+    /*filter: grayscale(100%);*/
+    /*filter: hue-rotate(170deg);*/
+    filter: blur(10px) grayscale(100%);
+}
+
+.galerie__figure:hover{
+    transform: scale(2) ;
+    z-index: 10s;
+}
+.galerie__figure:hover .galerie__img{
+    filter:none;
+   
+}

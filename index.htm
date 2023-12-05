@@ -7,6 +7,9 @@
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/menu.css">
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/entete.css">
+    <link rel="stylesheet" href="css/galerie.css">
+    <link rel="stylesheet" href="css/formulaire.css">
    
 </head>
 
@@ -17,17 +20,18 @@
 <div class="global" id="entete">
     <header>
         <h1>TP2</h1>
+        <h4>Mise en page Web </h4>
         <input type="checkbox"  id="check_burger">
         <!-- création d'un bouton avec la balise label
         pour trouver des icônes pratiques : https://svgbox.net/-->
         <label id = "burger" for="check_burger">
             <img src="https://s2.svgbox.net/hero-outline.svg?ic=menu" width = "32" height = "32" alt="logo burger">
-            <img src="https://s2.svgbox.net/hero-outline.svg?ic=x&color=000" width="32" height="32">
+            <img src="https://s2.svgbox.net/hero-outline.svg?ic=x&color=fff" width="32" height="32">
         </label>
         <nav class = "menu">
             <a href="#accueil"> Accueil</a>
             <a href="#inscription"> Inscription</a>
-            <a href="galerie"> Galerie</a>
+            <a href="#galerie"> Galerie</a>
         </nav> 
 
     </header>
@@ -37,13 +41,33 @@
     
     <div class = "global" id = "accueil">
         <section>
-            TP2
+        <h1>TP2</h1>
         </section>
     </div>
 <!-- section inscription -->
 <div class = "global" id="inscription">
     <section>
         <h1>Inscription</h1>
+        <form action="" class = "formulaire">
+            <label for="input__nom" class="etiquette__nom" >nom</label>
+            <input type="text" id ="input__nom" placeholder="Votre nom de famille">
+            <label for="input__prenom" class="etiquette__prenom" >Prénom</label>
+            <input type="text" id ="input__prenom" placeholder="Votre prénom">
+            <label for="input__tel" class="etiquette__tel" >Téléphone</label>
+            <input type="text" id ="input__tel" placeholder="Votre numéro de téléphone">
+            <fieldset class = "form__chk">
+                <legend>Les langages que vous maîtrisez: </legend>
+                <label for="input__html" class="etiquette__lang">HTML/CSS</label>
+                <input type="checkbox" id="input_html">
+                <label for="input__js" class="etiquette__js">JS</label>
+                <input type="checkbox" id="input__js">
+                <label for="input__php" class="etiquette__php">PHP</label>
+                <input type="checkbox" id="input__php">
+                <label for="input__sql" class="etiquette__sql">SQL</label>
+                <input type="checkbox" id="input_sql">
+            </fieldset>
+
+        </form>
     </section>
 </div>
 <!-- section tableau -->
@@ -62,9 +86,27 @@
 </div>
 <!-- section galerie -->
 <div class = "global" id = "galerie"> 
-
+    <h1>Galerie</h1>
     <section>
-        <h1>Galerie</h1>
+        <figure class = "galerie">
+        <figure class = "galerie__figure">
+            <img class = "galerie__img" src="images/maison01.jpg" alt="">
+            <figcaption class = "galerie__caption"></figcaption>    
+        </figure>
+        <figure class = "galerie__figure">
+            <img class = "galerie__img" src="images/maison02.jpg" alt="">
+            <figcaption class = "galerie__caption"></figcaption>    
+        </figure>
+        <figure class = "galerie__figure">
+            <img class = "galerie__img" src="images/maison03.jpg" alt="">
+            <figcaption class = "galerie__caption"></figcaption>    
+        </figure>
+        <figure class = "galerie__figure">
+            <img class = "galerie__img" src="images/maison04.jpg" alt="">
+            <figcaption class = "galerie__caption"></figcaption>    
+        </figure>
+    </figure>
+        
     </section>
 </div>
 <!-- section video -->

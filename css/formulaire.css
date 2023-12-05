@@ -1,0 +1,42 @@
+/*
+<form action="" class = "formulare">
+            <label for="input__nom" class="etiquette__nom" >nom</label>
+            <input type="text" id ="input__nom">
+
+*/
+.formulaire{
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.formulaire.label{
+
+}
+
+.formulaire input[type="text"]{
+    width: 400px;
+
+}
+.etiquette__nom{
+
+}
+
+.etiquette__prenom{
+
+
+}
+
+.etiquette__tel{
+
+
+}
+
+.form__chk{
+    display: flex;
+    gap: 5px;
+}
+
+.form__chk label {
+    padding-left: 10px;
+}

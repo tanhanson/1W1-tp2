@@ -50,9 +50,10 @@ body{
 
 #entete header {
     justify-content: space-between;
-    align-items: center;
+    align-items: flex-start;
     /* permet de définir le référentiel pour le menu */
     position: relative;
+    gap: 10px;
 }
 #accueil{
     background-color: aquamarine;
@@ -62,3 +63,6 @@ body{
    background-color: rgb(234, 255, 127); 
 }
 
+.global section {
+    flex-direction: column;
+}
