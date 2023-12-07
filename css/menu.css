@@ -1,95 +1,79 @@
 /*
-<input type="checkbox"  id="check_burger">
-        <label id = "burger" for="check_burger">
-            <img src="https://s2.svgbox.net/hero-outline.svg?ic=menu" width = "32" height = "32" alt="logo burger">
-        </label>
+   <input type="checkbox"  id="chk_burger">
+    <label  id="burger" for="chk_burger">
+        <img src="https://s2.svgbox.net/hero-outline.svg?ic=menu&color=000" width="32" height="32">
+    </label>
+
+    <nav  class="menu">
+      <a href="#accueil">Accueil</a>
+      <a href="#inscription">Inscription</a>
+      <a href="#galerie">Galerie</a>
+    </nav>
+
 */
 
-/*
-  <nav class = "menu">
-            <a href="#accueil"> Accueil</a>
-            <a href="#inscription"> Inscription</a>
-            <a href="galerie"> Galerie</a>
-        </nav> 
+#chk_burger {
+    display: none;
+}
+#chk_burger:checked ~ .menu {
+    transform: translateY(0);
+}
+/* Permet de controler l'apparence du bouton burger
+   deux possibilités: ouvrir ou fermer
+   ouvrir : les trois barres horizontales apparaît
+   fermer : le X apparaît
+   */
+
+/* 
+si la case à côcher est côcher alors on fait apparaître l'image «X»
+et on fait disparaître l'image «  burger »
 */
+#chk_burger:checked ~ #burger img:nth-of-type(2){
+    display: block; /* active le X */
+}
+#chk_burger:checked ~ #burger img:nth-of-type(1){
+    display: none; /* desactive barres horizontales */
+}
+
 
 #burger {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    border: 1px solid #aaa;
-    transition: 0.25;
-    padding: 5px;
-    width: 2.3rem;
-    height: 2.3rem;
-    transition: .25s;
-    position: relative;
-    border-radius: 5px;
-    right: 0;
-    z-index: 10;
-}
-
-#burger img {
+    width : 40px;
     position: absolute;
-    top: 0;
-    right: 0;
+    margin-left : auto;
+    top:0;
+    right : 0;
+    z-index : 10;
 }
+
+#burger img{
+    position: absolute;
+    top : 0;
+    left : 0;
+}
+
 #burger img:nth-of-type(1){
-    display: block;
+  display : block;
 }
+
 #burger img:nth-of-type(2){
-    display: none;
+    display : none;
 }
-#check_burger {
-    display: none;
-}
-#check_burger:checked ~ #burger img:nth-of-type(2) {
-    display: block;
-}
-#check_burger:checked ~ #burger img:nth-of-type(1) {
-    display: none;
-}
-
-#check_burger:checked ~ .menu {
-    transform: translateY(0); /* position naturel du menu */
- }
- /* Permet de controler l'apparence du bouton burger
- deux possibilités: ouvrir ou fermer
- ouvrir : les trois barres horizontales apparaît
- fermmer: le X apparait
- 
- */
-
- /* si la case à côcher alors on fait apparaître l'image «X»
- et on fait disparaître l'image « burger »
- */
- #check_burger:checked ~ #burger {
-    transform: rotate(90deg);
- }
 
 .menu {
-    display: flex;
+    display : flex;
     flex-direction: column;
-    position: absolute;
-    right: 0;
+    position : absolute;
+    right : 0;
     top: 0;
     transform: translateY(-250%);
-    transition: 0.15s;
-    background-color: rgb(112, 197, 116);
-    width: 200px;
-    gap: 3px;
-    z-index: -1;
-    
+    transition : transform .25s;
+    background-color: #000;
+    gap:5px;
+    padding : 5px;
+    width : 250px;
+   
 }
+
 .menu a {
-    color: #fff;
-    display: block;
-}
-
-h1{
-
-}
-
-h2{
-    margin-top: 1.2vh;
+     color : #fff;
 }

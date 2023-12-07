@@ -1,42 +1,37 @@
 /*
-<form action="" class = "formulare">
-            <label for="input__nom" class="etiquette__nom" >nom</label>
-            <input type="text" id ="input__nom">
+    <form action="" class="formulaire">
+      <label  class="etiquette__nom" for="input__nom">Nom</label>
+      <input type="text" id="input__nom">
+      <label  class="etiquette__prenom" for="input__prenom">Prénom</label>
+      <input type="text" id="input__prenom">
+      <label  class="etiquette__tel" for="input__tel">Téléphone</label>
+      <input type="text" id="input__tel">
+    <fieldset class="form__chk">
 
 */
+
+/*
+https://www.w3schools.com/html/html_forms.asp
+*/
+
 .formulaire{
-    display: flex;
+    display : flex;
     flex-direction: column;
-    gap: 15px;
+    gap : 15px;
 }
 
-.formulaire.label{
+.formulaire label{
 
 }
-
 .formulaire input[type="text"]{
-    width: 400px;
-
-}
-.etiquette__nom{
-
+width : 400px;
 }
 
-.etiquette__prenom{
-
-
+.form__chk {
+    display : flex;
+    gap : 5px;
 }
 
-.etiquette__tel{
-
-
-}
-
-.form__chk{
-    display: flex;
-    gap: 5px;
-}
-
-.form__chk label {
-    padding-left: 10px;
+.form__chk label{
+    padding-left: 25px;
 }

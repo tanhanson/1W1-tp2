@@ -1,68 +1,88 @@
-/*    ---------------------------------------- initialisation ------------------------- */
+/* --------------------------------------- initialisation */
 *{
-    margin: 0;
-    padding: 0;
+    margin:0;
+    padding:0;
 }
 
 html {
     box-sizing: border-box;
-
-}
-*,
-*:before,
-*:after {
+     }
+    *,
+    *:before,
+    *:after {
     box-sizing: inherit;
-}
-/* ------------------------------------------------------------------------------------- */
-
-
-body{
-    display: flex;
-    /* on défini la direction de l'axe principal comme étant vertical */
+     }
+/* ------------------------------------------ */     
+body {
+    display : flex;
+    /* on défini la direction de l'axe proncipal comme étant vertical */
     flex-direction: column;
-    /*width: 100vw;*/
+   /* width: 100vw;*/
 }
-/* les conteneurs div autour de chaque section */
-.global{
+
+/* les conteneurs  div autour de chaque section */
+.global {
    display: flex;
    justify-content: center;
+   /* align-items: center;*/ 
    min-width: 100%;
-   /*border: 1px solid #aaa;*/ 
-   min-height: 100vh;
-   
+   /* border: 1px solid #aaa; */
+   min-height : 100vh;
 }
+
 .global section,
 .global header,
-.global footer{
-    display: flex;
+.global footer {
+    display : flex;
     flex: 0 1 1000px;
-    /*border: 1px solid #aaa;*/
-    background-color: rgba(0,0,0,.2);
-
+   /* border: 1px solid #aaa; */
+   /* rendre la couleur plus foncé, ajoute du noir */
+    background-color: rgba(0,0,0, .1) ;
+    background-color: rgba(255,255,255, .5) ;
+}
+.global section,
+.global footer {
+    flex-direction : column;
 }
 
+
+
 #entete {
-    background-color: rgb(220,204,102);
+   /* background-color: rgb(220, 204, 102); */
+   background-image: linear-gradient(0deg, #00ff1c, #ffea00);
     min-height: 1vh;
-    position: sticky;
-    top: 0;
+    position : sticky;
+    top:0;
+    /* Permet à la division #entete d'être au dessus des zones du site */
+    z-index: 10;
 }
 
 #entete header {
     justify-content: space-between;
-    align-items: flex-start;
-    /* permet de définir le référentiel pour le menu */
-    position: relative;
+    align-items: center;
     gap: 10px;
+    /* permet de définir le référentiel pour le menu */
+    position : relative;
 }
-#accueil{
+
+#accueil {
     background-color: aquamarine;
 }
 
-#inscription{
-   background-color: rgb(234, 255, 127); 
+#inscription {
+    background-color: rgb(234, 255, 127);
 }
 
-.global section {
-    flex-direction: column;
+
+h1 {
+    font-size: clamp(2.25rem, -0.0417rem + 7.3333vw, 5rem);
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+h2{
+    font-size: clamp(1.75rem, 0.0833rem + 5.3333vw, 3.75rem);
+}
+
+h2{
+    margin-top : 10vh;
 }
