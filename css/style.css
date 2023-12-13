@@ -12,7 +12,15 @@ html {
     *:after {
     box-sizing: inherit;
      }
-/* ------------------------------------------ */     
+/* ------------------------------------------ */   
+
+.logo {
+    width: 300px;
+    height: 200px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
 body {
     display : flex;
     /* on défini la direction de l'axe proncipal comme étant vertical */
@@ -38,7 +46,7 @@ body {
    /* border: 1px solid #aaa; */
    /* rendre la couleur plus foncé, ajoute du noir */
     background-color: rgba(0,0,0, .1) ;
-    background-color: rgba(255,255,255, .5) ;
+    /*background-color: rgba(255,255,255, .5) ; */
 }
 .global section,
 .global footer {
@@ -49,7 +57,7 @@ body {
 
 #entete {
    /* background-color: rgb(220, 204, 102); */
-   background-image: linear-gradient(0deg, #00ff1c, #ffea00);
+   background-image: linear-gradient(0deg, rgb(238, 40, 40), rgb(161, 2, 2));
     min-height: 1vh;
     position : sticky;
     top:0;
@@ -84,5 +92,76 @@ h2{
 }
 
 h2{
-    margin-top : 10vh;
+    margin-top : 5px;
 }
+
+h3 {
+    display: flex;
+    justify-content: center;
+}
+#Titre01 {
+    display: flex;
+    justify-content: center;
+}
+
+table{
+    border: 2px solid #aaa;
+    border-collapse: collapse;
+}
+td, th{
+    border: 1px solid #444;
+    font-size: 2rem;
+    padding: 4px;
+    
+}
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+.horaire td {
+    width: 5rem;
+}
+th{
+    background-color: #aaa;
+}
+.horaire caption{
+    font-family: Kenia;
+    font-size: 2rem;
+    font-weight: bold;
+    padding: 5px;
+}
+.photoshop{
+    background-color: #6b9080;
+    font-family: Agbalumo;
+}
+
+.fr{
+    background-color: #a4c3b2;
+    font-family: Oswald;
+}
+
+.web{
+    background-color: #cce3de;
+    font-family: Roboto mono;
+}
+
+.video{
+    background-color: #eaf4f4;
+    font-family: Agbalumo;
+
+}
+
+.jeux{
+    background-color: #f6fff8;
+    font-family: Roboto mono;
+
+}
+.pause{
+    background-color: lightgray;
+    font-size: 20px;
+    font-family: Edu TAS Beginner;
+
+}
+

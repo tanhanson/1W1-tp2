@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>TP2</title> 
+    <title>TP2</title>
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/menu.css">
     <link rel="stylesheet" href="css/galerie.css">
@@ -17,6 +17,7 @@
  <div class="global" id="entete">
   <header>
     <h1>TP2</h1>
+    <img class = "logo" src="images/onepiecelogo.png" alt="logo one piece">
     <h4>Mise en page Web</h4>
     <input type="checkbox"  id="chk_burger">
     <!--   Création d'un bouton avec la balise label
@@ -40,14 +41,16 @@
 
 <!--  section accueil  -->
 <div class="global" id="accueil">
-    <section>
-      <h2>TP2</h2>
+    <section class = "section01">
+      <h2 id = Titre01>Bienvenue à One Piece!</h2>
+      <h3>Résumé de l'anime</h3>
     </section>
   </div>
 <!--  section inscription  -->
 <div class="global" id="inscription">
   <section>
     <h2>Inscription</h2>
+    <h3>Devenir membres des chapeaux de paille</h3>
     <form action="" class="formulaire">
       <label  class="etiquette__nom" for="input__nom">Nom</label>
       <input type="text" id="input__nom" placeholder="Votre nom de famille">
@@ -55,6 +58,11 @@
       <input type="text" id="input__prenom" placeholder="Votre prénom">
       <label  class="etiquette__tel" for="input__tel">Téléphone</label>
       <input type="text" id="input__tel" placeholder="Votre téléphone ">
+      
+      <input class = "sexe" type="radio" name = "Sexe"> Mâle
+      <input class = "sexe" type="radio" name = "Sexe"> Femelle
+      <input class = "sexe" type="radio" name = "Sexe"> Autre  
+      
       <fieldset class="form__chk">
         <legend>Les langages que vous maîtrisez:</legend>
         <label for="input__html" class="etiquette__lang">HTML/CSS</label>
@@ -67,6 +75,161 @@
         <input type="checkbox"  id="input__sql">
       </fieldset>
     </form>
+
+    <table class = "horaire">
+      <caption>Horaire session automne 2023</caption>
+      <tr>
+          <th></th>
+          <th>LUN</th>
+          <th>MAR</th>
+          <th>MER</th>
+          <th>JEU</th>
+          <th>VEN</th>
+      </tr>
+     <tr>
+          <th>8h</th>
+          <td></td> <!-- lundi-->
+          <td></td> <!-- mardi -->
+          <td></td>
+          <td></td>
+          <td></td>
+
+     </tr>
+     <tr>
+          <th> 8h10</th>
+          <td></td>
+          <td></td>
+          <td class = "video" rowspan="6">1M1</td>
+          <td class = "fr" rowspan="4">Français</td>
+          <td class = "video" rowspan="4">1M1</td>
+     </tr>
+     <tr>
+          <th>9h</th>
+          <td></td>
+          <td></td>
+          
+     </tr>
+     <tr>
+          <th>9h10</th>
+          <td></td>
+          <td></td>
+          
+
+     </tr>
+     <tr>
+          <th>10h</th>
+          <td></td>
+          <td></td>
+         
+          
+     </tr>
+     <tr>
+          <th>10h10</th>
+          <td></td>
+          <td class = "fr" rowspan="4"> Français</td>
+          <td></td>
+          <td></td>
+          
+     </tr>
+     <tr>
+          <th>11h</th>
+          <td></td>
+          <td></td>
+          <td></td>
+          
+     </tr>
+     <tr>
+          <th>11h10</th>
+          <td></td>
+          <td class = "jeux" rowspan="4">1J1</td>
+          <td></td>
+          <td></td>
+          
+     </tr>
+     <tr>
+          <th>12h</th>
+          <td></td>
+          <td></td>
+          
+     </tr>
+     <tr>
+          <th>12h10</th>
+          <td class = "photoshop" rowspan = "6">1M2</td>
+          <td class = "pause" rowspan="4">Activités communes</td>
+          <td class = "pause" rowspan="4">Activités communes</td>
+          <td></td>
+        
+     </tr>
+     <tr> 
+          <th>13h</th>
+          <td></td>
+          
+     </tr>
+     <tr>
+          <th>13h10</th>
+          <td></td>
+          <td></td>
+          
+          
+     </tr>
+     <tr>
+          <th>14h</th>
+          <td></td>
+          <td></td>
+          
+     </tr>
+     <tr>
+          <th>14h10</th>
+          <td class = "web"rowspan= 6>1W1</td>
+          <td></td>
+          <td class = "web" rowspan="4">1W1</td>
+          <td class = "jeux" rowspan="6">1J1</td>
+          
+     </tr>
+     <tr>
+          <th>15h</th>
+          <td></td>
+          
+     </tr>
+          <th>15h10</th>
+          <td></td>
+          <td class = "photoshop" rowspan="6">1M2</td>
+          
+     <tr>
+          <th>16h</th>
+          <td></td>
+          
+          
+     </tr>
+     <tr>
+          <th>16h10</th>
+          <td></td>
+          <td></td>
+          
+     </tr>
+     <tr>
+          <th>17h</th>
+          <td></td>
+          <td></td>
+          
+     </tr>
+     <tr>
+          <th>17h10</th>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+         
+     </tr>
+     <tr>
+          <th>18h</th>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>     
+     </tr>
+    
+  </table>
   </section>
 </div>
 <!-- ///////////////////////////////  -->
@@ -76,22 +239,56 @@
     <h2>Galerie</h2>
     <figure class="galerie">
       <figure class="galerie__figure">
-        <img class="galerie__img" src="images/maison01.jpg" alt="">
-        <figcaption class="galerie__caption"></figcaption>
+        <img class="galerie__img" src="images/luffy.webp" alt="">
+        <figcaption class="galerie__caption">luffy</figcaption>
       </figure>
       <figure class="galerie__figure">
-        <img class="galerie__img" src="images/maison02.jpg" alt="">
-        <figcaption class="galerie__caption"></figcaption>
+        <img class="galerie__img" src="images/zoro.png" alt="">
+        <figcaption class="galerie__caption">zoro</figcaption>
       </figure>
       <figure class="galerie__figure">
-        <img class="galerie__img" src="images/maison03.jpg" alt="">
-        <figcaption class="galerie__caption"></figcaption>
+        <img class="galerie__img" src="images/nami.webp" alt="">
+        <figcaption class="galerie__caption">nami</figcaption>
       </figure>
       <figure class="galerie__figure">
-        <img class="galerie__img" src="images/maison04.jpg" alt="">
-        <figcaption class="galerie__caption"></figcaption>
+        <img class="galerie__img" src="images/sanji.png" alt="">
+        <figcaption class="galerie__caption">usopp</figcaption>
+      </figure>
+      <figure class="galerie__figure">
+        <img class="galerie__img" src="images/chopper.png" alt="">
+        <figcaption class="galerie__caption">sanji</figcaption>
+      </figure>
+      <figure class="galerie__figure">
+        <img class="galerie__img" src="images/robin.png" alt="">
+        <figcaption class="galerie__caption">chopper</figcaption>
+      </figure>
+      <figure class="galerie__figure">
+        <img class="galerie__img" src="images/franky.webp" alt="">
+        <figcaption class="galerie__caption">robin</figcaption>
+      </figure>
+      <figure class="galerie__figure">
+        <img class="galerie__img" src="images/brook.png" alt="">
+        <figcaption class="galerie__caption">brook</figcaption>
+      </figure>
+      <figure class="galerie__figure">
+        <img class="galerie__img" src="images/jimbei.png" alt="">
+        <figcaption class="galerie__caption">jimbei</figcaption>
       </figure>
 
+
+    </figure>
+  </section>
+</div>
+
+<div class="global" id="article">
+  <section>
+    <h2>Article</h2>
+    <figure class = article__img>
+
+      <figure class = article__figure></figure>
+        <img class="article__img" src="images/wano.avif" alt="">
+        <figcaption class="article__caption"></figcaption>
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Obcaecati quos, modi doloribus accusamus ipsa quasi est ab libero maxime ex sequi quam, cum voluptatem aliquid voluptate error, labore nulla iure!</p>
 
     </figure>
   </section>

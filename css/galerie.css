@@ -32,14 +32,13 @@
 /* image */
 .galerie__img{
  
-    width : 100%;
+    width : 200px;
+    height: 300px;
   /*  filter: grayscale(100%);*/
   /* filter : hue-rotate(170deg);  */
   /* on ajoute plusieurs filtres à la même propriété filter */
    filter : blur(2px) grayscale(100%) ;
    
-   
-
 }
 .galerie__figure:hover{
    
@@ -54,4 +53,15 @@
 /* figcaption */
 .galerie__caption{
     
+}
+
+/* ////////////////////////////////////////////////// ARTICLE //////////////////////// */
+
+
+.article__img {
+
+  
+  width: 500px;
+  height: 300px;
+  
 }
