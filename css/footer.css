@@ -89,3 +89,10 @@
   #confidentialite {
    padding-top: 60px;
   }
+
+  #droit {
+    font-size: 8px;
+    text-align: center;
+    padding-top: 40px;
+    margin-right: 40px;
+  }
