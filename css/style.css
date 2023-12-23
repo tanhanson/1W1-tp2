@@ -1,4 +1,8 @@
 /* --------------------------------------- initialisation */
+@font-face {
+    font-family: OnePi;
+    src: url(../font/One\ Piece\ -\ PERSONAL\ USE.ttf);
+}
 *{
     margin:0;
     padding:0;
@@ -11,6 +15,7 @@ html {
     *:before,
     *:after {
     box-sizing: inherit;
+    scroll-behavior: smooth;
      }
 /* ------------------------------------------ */   
 
@@ -36,6 +41,7 @@ body {
    min-width: 100%;
    /* border: 1px solid #aaa; */
    min-height : 100vh;
+   font-family: Raleway;
 }
 
 .global section,
@@ -54,15 +60,15 @@ body {
 }
 
 
-
 #entete {
    /* background-color: rgb(220, 204, 102); */
    background-image: linear-gradient(0deg, rgb(238, 40, 40), rgb(161, 2, 2));
     min-height: 1vh;
-    position : sticky;
+    /* position : sticky; */
     top:0;
     /* Permet à la division #entete d'être au dessus des zones du site */
     z-index: 10;
+    
 }
 
 #entete header {
@@ -73,14 +79,56 @@ body {
     position : relative;
 }
 
+
+
+.entete__form input {
+    border: 1px solid #ee4949;
+    padding: 2px 6px;
+    margin: 4px;
+    background-color: #ee4949;
+    border-radius: 6px;
+   
+    box-sizing: border-box; /* Ensure padding and border are included in the element's total width and height */
+}
+
+#entete .entete__form input::placeholder {
+    color: white; 
+  }
+#entete .entete__form input:focus::placeholder {
+    color: grey;
+}
 #accueil {
-    background-color: aquamarine;
+    background-color: 	#9e7f65;
 }
 
 #inscription {
-    background-color: rgb(234, 255, 127);
+    background-color: 	#9e7f65;
 }
 
+#galerie {
+    background-color: 	#9e7f65;
+}
+
+#article {
+    background-color: 	#9e7f65;
+}
+
+#tableau {
+    background-color: #9e7f65;;   
+}
+#piedpage {
+    background-color: 	#9e7f65;
+}
+
+#video {
+    background-color: #9e7f65;
+}
+
+#Titre01 {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 30px;
+}
 
 h1 {
     font-size: clamp(2.25rem, -0.0417rem + 7.3333vw, 5rem);
@@ -99,69 +147,24 @@ h3 {
     display: flex;
     justify-content: center;
 }
-#Titre01 {
-    display: flex;
-    justify-content: center;
+
+.intro {
+    flex: end;
+    flex-direction: row;
+    font-size: 30px;
+    margin-bottom: 30px;
+    padding-top: 30px;
+    font-family: Raleway;
+    color: #e0d6d6;
 }
 
-table{
-    border: 2px solid #aaa;
-    border-collapse: collapse;
-}
-td, th{
-    border: 1px solid #444;
-    font-size: 2rem;
-    padding: 4px;
-    
-}
 body{
     display: flex;
     justify-content: center;
     align-items: center;
     min-height: 100vh;
 }
-.horaire td {
-    width: 5rem;
-}
-th{
-    background-color: #aaa;
-}
-.horaire caption{
-    font-family: Kenia;
-    font-size: 2rem;
-    font-weight: bold;
-    padding: 5px;
-}
-.photoshop{
-    background-color: #6b9080;
-    font-family: Agbalumo;
-}
 
-.fr{
-    background-color: #a4c3b2;
-    font-family: Oswald;
-}
 
-.web{
-    background-color: #cce3de;
-    font-family: Roboto mono;
-}
 
-.video{
-    background-color: #eaf4f4;
-    font-family: Agbalumo;
-
-}
-
-.jeux{
-    background-color: #f6fff8;
-    font-family: Roboto mono;
-
-}
-.pause{
-    background-color: lightgray;
-    font-size: 20px;
-    font-family: Edu TAS Beginner;
-
-}
 

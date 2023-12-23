@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -10,6 +10,11 @@
     <link rel="stylesheet" href="css/formulaire.css">
     <link rel="stylesheet" href="css/footer.css">
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/tableau.css">
+    <link rel="stylesheet" href="css/article.css">
+    <link rel="stylesheet" href="css/video.css">
+    
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@300&family=Silkscreen&display=swap" rel="stylesheet">
 </head>
 <body>
 
@@ -18,342 +23,346 @@
   <header>
     <h1>TP2</h1>
     <img class = "logo" src="images/onepiecelogo.png" alt="logo one piece">
-    <h4>Mise en page Web</h4>
+    <form class="entete__form">
+      <input type="search" id="recherche" placeholder="Rechercher">
+      <label for="recherche"></label>
+    </form>
     <input type="checkbox"  id="chk_burger">
+    
+    
     <!--   Création d'un bouton avec la balise label
     pour trouver des icône pratique : https://svgbox.net/
     
     -->
     <label  id="burger" for="chk_burger">
-        <img src="https://s2.svgbox.net/hero-outline.svg?ic=menu&color=000" width="32" height="32">
-        <img src="https://s2.svgbox.net/hero-solid.svg?ic=x&color=fff" width="32" height="32">
+        <img src="https://s2.svgbox.net/hero-outline.svg?ic=menu&color=000" width="32" height="32" alt = "menu burger">
+        <img src="https://s2.svgbox.net/hero-solid.svg?ic=x&color=fff" width="32" height="32" alt = "menu burger">
     </label>
      <!-- navigation principale --> 
     <nav  class="menu">
       <a href="#accueil">Accueil</a>
       <a href="#inscription">Inscription</a>
+      <a href="#tableau">Tableau</a>
       <a href="#galerie">Galerie</a>
+      <a href="#article">Article</a>
+      <a href="#video">Video</a>
     </nav>
   </header>
  </div>
 
-
-
-<!--  section accueil  -->
+<!--  ////////////////////////////////////////////////////////////////////// section accueil  /////////////////////// -->
 <div class="global" id="accueil">
     <section class = "section01">
       <h2 id = Titre01>Bienvenue à One Piece!</h2>
-      <h3>Résumé de l'anime</h3>
+      <img src="images/wallpaper.jpg" alt="" width = "1000">
+      
+      <h3 class = "intro"> Hanson Tan </h3>
+      <h3 class = "intro">582-1W1 – Mise en page Web</h3>
+      <h3 class = "intro">Techniques d’intégration multimédia</h3>
+      <h3 class = "intro">Collège de Maisonneuve</h3>
+      <h3 class = "intro">https://github.com/tanhanson/1W1-tp2</h3>
+      <h3 class = "intro">Automne 2023</h3>
     </section>
   </div>
-<!--  section inscription  -->
+<!--  ///////////////////////////////////////////////////////////////////section inscription//////////////////////////////////  -->
 <div class="global" id="inscription">
   <section>
     <h2>Inscription</h2>
-    <h3>Devenir membres des chapeaux de paille</h3>
-    <form action="" class="formulaire">
-      <label  class="etiquette__nom" for="input__nom">Nom</label>
-      <input type="text" id="input__nom" placeholder="Votre nom de famille">
-      <label  class="etiquette__prenom" for="input__prenom">Prénom</label>
-      <input type="text" id="input__prenom" placeholder="Votre prénom">
-      <label  class="etiquette__tel" for="input__tel">Téléphone</label>
-      <input type="text" id="input__tel" placeholder="Votre téléphone ">
-      
-      <input class = "sexe" type="radio" name = "Sexe"> Mâle
-      <input class = "sexe" type="radio" name = "Sexe"> Femelle
-      <input class = "sexe" type="radio" name = "Sexe"> Autre  
-      
-      <fieldset class="form__chk">
-        <legend>Les langages que vous maîtrisez:</legend>
-        <label for="input__html" class="etiquette__lang">HTML/CSS</label>
-        <input type="checkbox"  id="input__html">
-        <label for="input__js" class="etiquette__js">JS</label>
-        <input type="checkbox"  id="input__js">
-        <label for="input__php" class="etiquette__php">PHP</label>
-        <input type="checkbox"  id="input__php">
-        <label for="input__sql" class="etiquette__sql">SQL</label>
-        <input type="checkbox"  id="input__sql">
-      </fieldset>
-    </form>
-
-    <table class = "horaire">
-      <caption>Horaire session automne 2023</caption>
-      <tr>
-          <th></th>
-          <th>LUN</th>
-          <th>MAR</th>
-          <th>MER</th>
-          <th>JEU</th>
-          <th>VEN</th>
-      </tr>
-     <tr>
-          <th>8h</th>
-          <td></td> <!-- lundi-->
-          <td></td> <!-- mardi -->
-          <td></td>
-          <td></td>
-          <td></td>
-
-     </tr>
-     <tr>
-          <th> 8h10</th>
-          <td></td>
-          <td></td>
-          <td class = "video" rowspan="6">1M1</td>
-          <td class = "fr" rowspan="4">Français</td>
-          <td class = "video" rowspan="4">1M1</td>
-     </tr>
-     <tr>
-          <th>9h</th>
-          <td></td>
-          <td></td>
-          
-     </tr>
-     <tr>
-          <th>9h10</th>
-          <td></td>
-          <td></td>
-          
-
-     </tr>
-     <tr>
-          <th>10h</th>
-          <td></td>
-          <td></td>
-         
-          
-     </tr>
-     <tr>
-          <th>10h10</th>
-          <td></td>
-          <td class = "fr" rowspan="4"> Français</td>
-          <td></td>
-          <td></td>
-          
-     </tr>
-     <tr>
-          <th>11h</th>
-          <td></td>
-          <td></td>
-          <td></td>
-          
-     </tr>
-     <tr>
-          <th>11h10</th>
-          <td></td>
-          <td class = "jeux" rowspan="4">1J1</td>
-          <td></td>
-          <td></td>
-          
-     </tr>
-     <tr>
-          <th>12h</th>
-          <td></td>
-          <td></td>
-          
-     </tr>
-     <tr>
-          <th>12h10</th>
-          <td class = "photoshop" rowspan = "6">1M2</td>
-          <td class = "pause" rowspan="4">Activités communes</td>
-          <td class = "pause" rowspan="4">Activités communes</td>
-          <td></td>
+  <section>
+    <div class="container">
+      <div class="title">Devenir membre des chapeaux de pailles! 👒</div>
+      <div class="content">
+        <form action="#">
+          <div class="informations">
+            <div class="input-box">
+              <span class="details">Prénom 😀</span>
+              <input type="text" placeholder="Prénom: " required>
+            </div>
+            <div class="input-box">
+              <span class="details">Nom 👨‍👩‍👦</span>
+              <input type="text" placeholder="Nom: " required>
+            </div>
+            <div class="input-box">
+              <span class="details">Email 📧</span>
+              <input type="text" placeholder="Email: " required>
+            </div>
+            <div class="input-box">
+              <span class="details">Rôle sur le bateau ⛵</span>
+              <input type="text" placeholder="Rôle: " required>
+            </div>
+          </div>
+          <div class="fruit">
+            <input type="radio" name="gender" id="point-1">
+            <input type="radio" name="gender" id="point-2">
+            <input type="radio" name="gender" id="point-3">
+            <span class="fruit-titre">Type de fruit que tu possèdes 🍎</span>
+            <div class="categorie">
+              <label for="point-1">
+              <span class="point un"></span>
+              <span class="gender">Logia</span>
+            </label>
+            <label for="point-2">
+              <span class="point deux"></span>
+              <span class="gender">Paramecia</span>
+            </label>
+            <label for="point-3">
+              <span class="point trois"></span>
+              <span class="gender">Zoan</span> 
+              </label>
+            </div>
+          </div>
+          <div class="button">
+            <input type="submit" value="Rejoindre!">
+          </div>
+        </form>
+      </div>
+      </div>
+    </section>
+    </div>
+    <div class="global" id="tableau">
+      <section>
+        <h2>Tableau</h2>
         
-     </tr>
-     <tr> 
-          <th>13h</th>
-          <td></td>
-          
-     </tr>
-     <tr>
-          <th>13h10</th>
-          <td></td>
-          <td></td>
-          
-          
-     </tr>
-     <tr>
-          <th>14h</th>
-          <td></td>
-          <td></td>
-          
-     </tr>
-     <tr>
-          <th>14h10</th>
-          <td class = "web"rowspan= 6>1W1</td>
-          <td></td>
-          <td class = "web" rowspan="4">1W1</td>
-          <td class = "jeux" rowspan="6">1J1</td>
-          
-     </tr>
-     <tr>
-          <th>15h</th>
-          <td></td>
-          
-     </tr>
-          <th>15h10</th>
-          <td></td>
-          <td class = "photoshop" rowspan="6">1M2</td>
-          
-     <tr>
-          <th>16h</th>
-          <td></td>
-          
-          
-     </tr>
-     <tr>
-          <th>16h10</th>
-          <td></td>
-          <td></td>
-          
-     </tr>
-     <tr>
-          <th>17h</th>
-          <td></td>
-          <td></td>
-          
-     </tr>
-     <tr>
-          <th>17h10</th>
-          <td></td>
-          <td></td>
-          <td></td>
-          <td></td>
-         
-     </tr>
-     <tr>
-          <th>18h</th>
-          <td></td>
-          <td></td>
-          <td></td>
-          <td></td>     
-     </tr>
+        <table class = "table__rond">
+          <caption id = "filmTitre">Les films de One Piece!</caption>
+          <thead>
+            <tr>
+              <th class = "nomFilm">The Movie</th>
+              <th class = "nomFilm"> Strong World</th>
+              <th class = "nomFilm">Film: Z</th>
+              <th class = "nomFilm">Film: Gold</th>
+              <th class = "nomFilm">Stampede</th>
+              <th class = "nomFilm">Film Red </th>
+          </tr>
+          </thead>
+          <tbody>
+
+          </tbody>
+          <tr>
+            <td> <img class = "tableau__img" src="images/Film1.jpg" alt="film1"></td>
+            <td><img class = "tableau__img" src="images/Film2.jfif" alt="film2"></td>
+            <td><img class = "tableau__img" src="images/Film3.jpg" alt="Film3"></td>
+            <td><img class = "tableau__img" src="images/Film4.jpg" alt="Film4"></td>
+            <td><img class = "tableau__img" src="images/Film5.jpg" alt="Film5"></td>
+            <td><img class = "tableau__img" src="images/Film6.jpg" alt="Film6"></td>
+          </tr>
+          <tr>
+            <td class = "date"> 2000</td>
+            <td class = "date"> 2009</td>
+            <td class = "date"> 2012</td>
+            <td class = "date"> 2016</td>
+            <td class = "date"> 2019</td>
+            <td class = "date"> 2022</td>
+          </tr>
+          <tr>
+            <td class = "classement"> 6.6/10</td>
+            <td class = "classement"> 7.5/10</td>
+            <td class = "classement"> 7.7/10</td>
+            <td class = "classement"> 7.1/10</td>
+            <td class = "classement"> 7.5/10</td>
+            <td class = "classement"> 6.7/10</td>
+          </tr>
+          <tfoot>
+            <td colspan="6"> <span id = "attention"> ATTENTION: </span> Les scores ne sont pas représentatifs de la qualité des films!</td>
+          </tfoot>
+
+      </table>
     
-  </table>
-  </section>
-</div>
-<!-- ///////////////////////////////  -->
-<!--  section galerie  -->
+      <div id = "empereurs">  
+      <table>
+        <caption id = "empereurTitre"> Les Empereurs de l'océan </caption>
+        <thead>
+          <th class = "nom" >Barbe Noire</th>
+          <th class = "nom" >Buggy</th>
+          <th class = "nom" >Shanks</th>
+          <th class = "nom" >Luffy</th>
+        </thead>
+
+        <tbody>
+          <td> <img class = "poster" src="images/barbenoirposter.jpg" alt=""></td>
+          <td><img class = "poster" src="images/buggyposter.jpg" alt=""></td>
+          <td><img class = "poster" src="images/shanksposter.jpg" alt=""></td>
+          <td><img class = "poster" src="images/posterluffy.avif" alt=""></td>
+        </tbody>
+      </table>
+      </div>
+      </div>
+      </section>
+      
+    
+
+<!--  ///////////////////////////////////////////////////////////////////// SECTION GALERIE ///////////////////  -->
 <div class="global" id="galerie">
   <section>
     <h2>Galerie</h2>
+    <h2 id = "membre"> Voici les membres des chapeaux de pailles! </h2>
+    <h3 id = "survol"> Passez votre souris par dessus les personnages! </h3>
     <figure class="galerie">
       <figure class="galerie__figure">
-        <img class="galerie__img" src="images/luffy.webp" alt="">
+        <img class="galerie__img" src="images/luffy.webp" alt="luffy">
         <figcaption class="galerie__caption">luffy</figcaption>
       </figure>
       <figure class="galerie__figure">
-        <img class="galerie__img" src="images/zoro.png" alt="">
+        <img class="galerie__img" src="images/zoro.png" alt="zoro">
         <figcaption class="galerie__caption">zoro</figcaption>
       </figure>
       <figure class="galerie__figure">
-        <img class="galerie__img" src="images/nami.webp" alt="">
+        <img class="galerie__img" src="images/nami.webp" alt="nami">
         <figcaption class="galerie__caption">nami</figcaption>
       </figure>
       <figure class="galerie__figure">
-        <img class="galerie__img" src="images/sanji.png" alt="">
+        <img class="galerie__img" src="images/sanji.png" alt="sanji">
         <figcaption class="galerie__caption">usopp</figcaption>
       </figure>
       <figure class="galerie__figure">
-        <img class="galerie__img" src="images/chopper.png" alt="">
+        <img class="galerie__img" src="images/chopper.png" alt="chopper">
         <figcaption class="galerie__caption">sanji</figcaption>
       </figure>
       <figure class="galerie__figure">
-        <img class="galerie__img" src="images/robin.png" alt="">
+        <img class="galerie__img" src="images/robin.png" alt="robin">
         <figcaption class="galerie__caption">chopper</figcaption>
       </figure>
       <figure class="galerie__figure">
-        <img class="galerie__img" src="images/franky.webp" alt="">
+        <img class="galerie__img" src="images/franky.webp" alt="franky">
         <figcaption class="galerie__caption">robin</figcaption>
       </figure>
       <figure class="galerie__figure">
-        <img class="galerie__img" src="images/brook.png" alt="">
+        <img class="galerie__img" src="images/brook.png" alt="brook">
         <figcaption class="galerie__caption">brook</figcaption>
       </figure>
       <figure class="galerie__figure">
-        <img class="galerie__img" src="images/jimbei.png" alt="">
+        <img class="galerie__img" src="images/jinbei.png" alt="jinbei">
         <figcaption class="galerie__caption">jimbei</figcaption>
       </figure>
-
-
+      <figure class="galerie__figure">
+        <img class="galerie__img" src="images/vivi.webp" alt="vivi">
+        <figcaption class="galerie__caption">vivi</figcaption>
+      </figure>
+      <figure class="galerie__figure">
+        <img class="galerie__img" src="images/karoo.png" alt="karoo">
+        <figcaption class="galerie__caption">karoo</figcaption>
+      </figure>
+      <figure class="galerie__figure">
+        <img class="galerie__img" src="images/yamato.webp" alt="yamato">
+        <figcaption class="galerie__caption">yamato</figcaption>
+      </figure>
     </figure>
   </section>
 </div>
 
+<!-- ////////////////////////////////////////////////////////////////// SECTION ARTICLE /////////////////////////////// -->
 <div class="global" id="article">
   <section>
-    <h2>Article</h2>
-    <figure class = article__img>
+    <h2>Article</h2> 
 
-      <figure class = article__figure></figure>
-        <img class="article__img" src="images/wano.avif" alt="">
-        <figcaption class="article__caption"></figcaption>
-        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Obcaecati quos, modi doloribus accusamus ipsa quasi est ab libero maxime ex sequi quam, cum voluptatem aliquid voluptate error, labore nulla iure!</p>
+    <h2 id = "titre__article"> Luffy GEARS </h2>
+    <h3> Voici toutes les transformations de Luffy durant l'anime! </h3>
 
-    </figure>
+      <div class = "row">
+      <div class = "column">
+      <figure class = article__figure>
+
+        <img class="article__img" src="images/gear1.jpg" alt="gear1">
+        <figcaption class="article__caption"> Gear 1</figcaption>
+        <p class = "description">Gear First est la première transformation de combat utilisée par Monkey D. Luffy, le protagoniste de l'anime et du manga "One Piece". Cette technique marque le début de l'évolution des compétences de Luffy dans sa quête pour devenir le Roi des Pirates. Bien que moins avancé que ses itérations ultérieures, Gear First est un élément clé de son arsenal. </p>
+
+        <img class="article__img" src="images/gear2.webp" alt="gear2">
+        <figcaption class="article__caption"> Gear 2</figcaption>
+        <p class = "description">Gear Second est une technique de combat intense utilisée par Monkey D. Luffy, le capitaine de l'équipage du Chapeau de Paille. Cette technique a été développée par Luffy pour augmenter sa puissance et sa vitesse lors des combats cruciaux. Luffy active Gear Second en augmentant drastiquement la circulation de son sang grâce à son fruit du démon, le Gomu Gomu no Mi.</p>
+      
+       
+        <img class="article__img" src="images/gear3.webp" alt="gear3">
+        <figcaption class="article__caption"> Gear 3</figcaption>
+        <p class = "description">Gear Third est une puissante technique de combat utilisée par luffy. Cette transformation impressionnante est une extension de la capacité de Luffy, conférée par le Gomu Gomu no Mi, son fruit du démon.
+
+          Pour activer Gear Third, Luffy commence par mâcher un grand volume d'air, l'infligeant dans les os de son bras ou de sa jambe, puis gonflant ces membres à une taille gigantesque. Lorsque le processus est terminé, Luffy devient temporairement un géant, augmentant considérablement sa force physique.</p>
+        
+        </div>
+        
+        <div class = "column">
+        <img class="article__img" src="images/gear4.avif" alt="gear4 bounce man">
+        <figcaption class="article__caption"> Gear 4 Bounce Man </figcaption>
+        <p class = "description">
+
+          Lorsqu'il active Gear Fourth, Luffy insuffle une quantité massive d'air dans ses muscles, provoquant un gonflement spectaculaire de son corps. Cette transformation confère à Luffy une masse musculaire élargie et une augmentation significative de sa puissance physique. Sa peau devient plus dure, agissant comme une armure, offrant une protection supplémentaire contre les attaques ennemies.</p>
+
+        <img class="article__img" src="images/gear4.5.jfif" alt="gear4 snake man">
+        <figcaption class="article__caption"> Gear 4 Snake Man</figcaption>
+        <p class = "description"> Gear Fourth: Snake Man est une des transformations les plus avancées de Luffy. Cette itération particulière de Gear Fourth est caractérisée par une agilité et une vitesse accrues, évoquant la fluidité et la rapidité d'un serpent. Cette transformation donne à Luffy une apparence plus élancée et sinueuse, évoquant les mouvements rapides et furtifs d'un serpent prêt à attaquer. </p>
+        <img class="article__img" src="images/gear5.avif" alt="gear5">
+        <figcaption class="article__caption"> Gear 5</figcaption>
+        <p class = "description">Gear Fifth lui permet de modifier facilement la forme et la taille de son corps caoutchouteux. De manière surprenante, il peut également étendre ses pouvoirs de caoutchouc aux objets inanimés qui l'entourent afin d'influer sur l'environnement, à l'instar de l'éveil d'un fruit du démon Paramecia. De nombreux mystères entourent encore Luffy et son fruit du démon.En tant que Zoan mythique éveillé , Luffy bénéficie d'une force, d'une vitesse et d'une durabilité bien plus grandes que celles des Zoans éveillés.</p>
+      </div>
+    </div>
+  
   </section>
 </div>
-<!-- ///////////////////////////////  -->
-<div class="global" id="piedpage">
+<!--  ////////////////////////////////////////////////////// SECTION VIDEO ////////////////////////// -->
+<div class="global" id="video">
+  <section>
+   <h2>Video</h2>
+   <h2 id = "titre__video"> Bande-annonce One Piece! </h2>
+   <h3 class = "titretrailer"> Version Netflix</h3>
+   <div class = "container_netflix">
+   <iframe  src="https://www.youtube.com/embed/Ades3pQbeh8?si=_bzGPYMghS_uhJu7" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+   <h3 class = "titretrailer"> Version Anime</h3>
+   <iframe  src="https://www.youtube.com/embed/dM7x1PNZDo0?si=8oLLWXpAW9mhI8Um" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>  </div>
+  
+</div>
+<!-- /////////////////////////////////////////////////////// SECTION PIED PAGE  -->
+<div id="piedpage">
   <footer>
     <!-- ////////////////////////////////////////////// première ligne -->
     <div class="footer__conteneur__1">
-        <section class="footer__adresse">
+      <section class="footer__adresse">
         <h4>Adresse</h4>
         <ul>
-            <li> <a href="https://cmaisonneuve.qc.ca"></a>Collège de Maisonneuve</li>
-            <li>3 800 Sherbrooke-Est</li>
-            <li>Montréal, QC, Canada</li>
-            <li>H1X 2A2</li>
-            <li>Tel: 514-254-7131</li>
-            
-            
+          <li class = "ecole">Collège de Maisonneuve</li>
+          <li class = "ecole">3 800 Sherbrooke-Est</li>
+          <li class = "ecole">Montréal, QC, Canada</li>
+          <li class = "ecole">H1X 2A2</li>
+          <li class = "ecole">Tel: 514-254-7131</li>
+          <li id = "confidentialite"> Avis de confidentialité | Privacy Notice</li>
         </ul>
-        </section>
-        <section class="footer__lien">
-
-            <h4>Liens</h4>
-            <ul>
-                <li><a href="https://">css-tricks.com</a></li>
-                <li><a href="">mdn tableau</a></li>
-                <li><a href="">mdn linear-gradient</a></li>
-                <li><a href="">mdn clamp</a></li>
-                <li><a href="">mdn filter</a></li>
-            </ul>
-        </section>
-
-        <section class="footer__text">
-
-            <h4>Texte</h4>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque laudantium ad porro ducimus qui minus accusantium velit, omnis iure dolores eius numquam quidem perferendis dolorum quis magnam corporis sed quibusdam!</p>
-        </section>
+      </section>
+      
+      
     </div>
     <!-- ////////////////////////////////////////////// deuxième ligne -->
     <div class="footer__conteneur__2">
-        <section class="image">
-            <h4>Images</h4>
-            <figure>
-                <img src="" alt="">
-                <img src="" alt="">
-                <img src="" alt="">
-                <img src="" alt="">
-            </figure>
-        </section>
-        <section class="footer__lien">Liens</section>
+      
+      <section class="footer__lien">
+        <h4> Liens</h4>
+        <ul>
+          <li><a href="https://css-tricks.com">css-tricks.com</a></li>
+          <li><a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/table">mdn tableau</a></li>
+          <li><a href="https://developer.mozilla.org/en-US/docs/Web/CSS/linear-gradient">mdn linear-gradient</a></li>
+          <li><a href="https://developer.mozilla.org/en-US/docs/Web/CSS/clamp()">mdn clamp</a></li>
+          <li><a href="https://developer.mozilla.org/en-US/docs/Web/CSS/filter">mdn filter</a></li>
+          <li><a href="https://one-piece.com/index.html"> Un autre site de One Piece!</a></li>
+          <li><a href="https://github.com/tanhanson/1W1-tp2">Ma page github!</a> </li>
+        </ul>
+      </section>
     </div>
-     <!-- ////////////////////////////////////////////// troisième ligne -->
+    <!-- ////////////////////////////////////////////// troisième ligne -->
     <div class="footer__conteneur__3">
-        <section class="icone">
-
-            <h4>Icone</h4>
-
+      <section class="icône">
+        <h4>Icone</h4>
+        <p>Cliquez sur les icônes! </p>
+        <a href="discord.com"> <img class = "sociaux" src="images/discord.png" alt="discord"></a>
+        <a href="instagram.com"><img class = "sociaux" src="images/instagram.png" alt="instagram"></a>
+        <a href="github.com"><img class = "sociaux" src="images/github.png" alt="github"></a>
+        <a href="behance.com"><img class = "sociaux" src="images/behance.png" alt="behance"></a>
+        <a href="facebook.com"><img class = "sociaux" src="images/facebook.png" alt="facebook"></a>
+      
+        <section class="footer__text">
+          <h4>Description du département</h4>
+          <p>Bienvenue sur la page du département d'intégration multimédia du Collège de Maisonneuve. Notre département est dédié à l'enseignement et à l'exploration des divers domaines de la création multimédia, allant de la conception graphique au développement web. Nous offrons des programmes stimulants qui visent à développer les compétences techniques et créatives des étudiants. Grâce à des laboratoires équipés de technologies de pointe, nos étudiants ont l'occasion de mettre en pratique ce qu'ils apprennent en classe. Notre objectif est de préparer les étudiants à des carrières passionnantes dans l'industrie multimédia en constante évolution. Rejoignez-nous pour une expérience éducative enrichissante, où la créativité rencontre la technologie.</p>
         </section>
-       
+
+      </section>
     </div>
-
-
   </footer>
-
 </div>
 </body>
 </html>

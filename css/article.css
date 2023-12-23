@@ -1,0 +1,33 @@
+.article__img {
+    width: 500px;
+    height: 250px;         /* taille image */
+}
+
+  .row {
+    display: flex;
+    justify-content: center;        /*image centrer */
+    border: 1px solid black
+  }
+  
+  .column {
+    flex: 50%;                      /* deux colonne egale */
+  }
+
+  .description {    
+    text-align: center;                 /* changement description coleur et centre */
+    background-color: #e93737;
+    color: white;
+  }
+
+  #titre__article {
+    display:flex;                       /* titre au centre */
+    justify-content: center;
+  }
+
+.article__caption {
+    background-color: #e93737;          /* Nom des gears modifications */
+    color: white;
+    text-align: center;
+    font-size: 25px;
+}
+

@@ -1,44 +1,122 @@
-/*
-    <form action="" class="formulaire">
-      <label  class="etiquette__nom" for="input__nom">Nom</label>
-      <input type="text" id="input__nom">
-      <label  class="etiquette__prenom" for="input__prenom">Prénom</label>
-      <input type="text" id="input__prenom">
-      <label  class="etiquette__tel" for="input__tel">Téléphone</label>
-      <input type="text" id="input__tel">
-    <fieldset class="form__chk">
 
-*/
-
-/*
-https://www.w3schools.com/html/html_forms.asp
-*/
-
-.formulaire{
-    display : flex;
-    flex-direction: column;
-    gap : 15px;
-    border: 2px solid darkred;
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Raleway;
 }
 
-.formulaire label{
-
+.container{
+  max-width: 1000px;
+  width: 100%;
+  background-color: #e94d4d;      /* changement general du contenurs du form */
+  padding: 25px 30px;
+  border-radius: 5px;
+  box-shadow: 0 5px 10px;
 }
-.formulaire input[type="text"]{
-width : 400px;
+.container .title{
+  font-size: 25px;                /*changement du titre du form */
+  color: white;
+  position: relative;
+  text-align: center;
 }
 
-.form__chk {
-    display : flex;
-    gap : 5px;
+.content form .informations{          /*changement  de l'espace ou que l'on ecrit */
+  display: flex;
+  flex-wrap: wrap;                    
+  justify-content: space-between;
+  margin: 20px 0 12px 0;
 }
 
-.form__chk label{
-    padding-left: 25px;
+form .input-box span.details{         /*changement  de l'espace ou que l'on ecrit */
+  display: block;
+  
+  margin-bottom: 5px;
+  
+}
+.informations .input-box input{
+  height: 45px;                             /* Style de l'espace ou que l'on ecrit dans le form */
+  width: 100%;
+  outline: none;
+  font-size: 16px;
+  border-radius: 5px;
+  padding-left: 15px;
+  border: 1px solid #f7c1c1;
+  transition: all 0.3s ease;
+  background-color: #f7c1c1;
+  
 }
 
-.formulaire input[type="radio"] {
-    margin: 0;
-    padding: 0;
-    
+ form .fruit-details .fruit-title{
+  font-size: 25px;
+  
+ }
+ form .categorie{                         /* deplacement des trois boutons */
+   display: flex;
+   width: 80%;
+   margin: 14px 0 ;
+   justify-content: space-between;
+ }
+ form .categorie label{                   /* deplacement des trois boutons */
+   display: flex;         
+   align-items: center;
+   cursor: pointer;
+ }
+ form .categorie label .point{
+  height: 18px;                   /* style des boutons */
+  width: 18px;
+  border-radius: 50%;
+  margin-right: 10px;
+  background: #d9d9d9;
+  border: 5px solid transparent;
+  transition: all 0.3s ease;
+}
+ #point-1:checked ~ .categorie label .un,
+ #point-2:checked ~ .categorie label .deux,
+ #point-3:checked ~ .categorie label .trois{
+   background: #e94d4d;                       /*changement des couleurs/style quand on clique sur un des boutons */
+   border-color: #fc7575;
+ }
+ form input[type="radio"]{
+   display:none;                                /* enlever les boutons radios pas necessaire */
+ }
+ form .button{
+   height: 45px;
+   margin: 35px 
+ }
+ form .button input{
+   height: 100%;                            /* modifcations pour le bouton pour rejoindre */
+   width: 100%;
+   border-radius: 5px;
+   border: none;
+   color: white;
+   font-size: 18px;
+   cursor: pointer;
+   background: linear-gradient( #ff0000, #fd4646);
+ }
+ form .button input:hover{
+  /* transform: scale(0.99); */
+  background: linear-gradient( #ff0000, #f16411);       /* modifcations pour le bouton pour rejoindre quamnd on hover*/
   }
+ 
+form .informations .input-box{
+    margin-bottom: 15px;
+    width: 100%;
+  }
+  form .categorie{
+    width: 100%;
+  }
+
+  .container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 100px;
+
+  }
+  
+
+  
+
+

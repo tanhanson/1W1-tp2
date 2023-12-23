@@ -1,0 +1,20 @@
+#titre__video {
+    display: flex;                  /* modification du titre bande annonce */
+    justify-content: center;
+    margin-bottom: 50px;
+}
+
+.container_netflix iframe {          /* modifcation des positions des video youtube */
+    display: flex;
+    justify-content: center;
+    width: 900px;
+    height: 500px;
+    padding-left: 100px;
+    padding-bottom: 50px;
+}
+
+.titretrailer {
+    color:#c73c3c;          /* modification des versions des videos youtube */
+    font-size: 50px;
+}
+

@@ -24,25 +24,68 @@
   </footer>
 
   */
-#piedpage > footer {
+ 
+  footer {
     display: flex;
-    flex-direction: column;
-    gap: 30px;
-}
-#piedpage > footer > div {
-    display: flex;
-    border: 1px solid #aaa;
-}
+    flex-wrap: wrap;                    /* trois colonnes pour le footer, changement de style 1920px pour prend le bas complet */
+    justify-content: space-between;
+    background-color: crimson;
+    color: white;
+    width: 1920px;
 
-#piedpage > footer > div > section {
-    border: 1px dotted #666;
-}
-
-.footer__adresse  ul,
-.footer__lien ul {
+  }
+  
+  .footer__conteneur__1,
+  .footer__conteneur__2,
+  .footer__conteneur__3 {           /* trois colonnes */
+    flex: 1;           
+    
+  }
+  
+  .footer__adresse,
+  .footer__lien,
+  .image,                       /* pousser tout vers la gauche */
+  .icone {
+    padding: 10px;
+    padding-left: 100px;
+  }
+  
+  h4 {
+    color: #333;
+    font-size: 20px;
+  }
+  
+  ul {
     list-style-type: none;
-}
-.footer__conteneur__3{
-    justify-content: center;
-    gap: 20px;
-}
+    padding: 0;
+  }
+  
+  a {
+    text-decoration: none;
+    color: #7387f8;
+    font-size: 20px;
+    
+    
+  }
+  
+  .image img {
+    width: 100%;
+    margin-bottom: 10px;
+  }
+
+  .sociaux {
+    padding-top: 5px;
+    width: 40px;
+    height: 40px;
+
+  }
+
+  .ecole {
+    font-size: 20px;
+    padding: 5px;
+   
+  }
+  
+  #confidentialite {
+   padding-top: 60px;
+  }
